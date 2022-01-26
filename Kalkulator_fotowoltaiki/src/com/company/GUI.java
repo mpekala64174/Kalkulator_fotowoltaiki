@@ -137,7 +137,129 @@ public class GUI implements ActionListener {
         ramka.setTitle("Kalkulator Fotowoltaiki");
         ramka.pack();
         ramka.setVisible(true);
+        podaj_nachylenie_1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_nachylenie_1){
+                    podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_1.getText());
+                    zmienna_nachylenie= 1.2F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_nachylenie_2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_nachylenie_2){
+                    podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_2.getText());
+                    zmienna_nachylenie= 1.05F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_nachylenie_3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_nachylenie_3){
+                    podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_3.getText());
+                    zmienna_nachylenie= 1.0F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_nachylenie_4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_nachylenie_4){
+                    podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_4.getText());
+                    zmienna_nachylenie= 1.1F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_zacienienie_1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_zacienienie_1){
+                    podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_1.getText());
+                    zmienna_zacienienie=1.0F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_zacienienie_2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_zacienienie_2){
+                    podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_2.getText());
+                    zmienna_zacienienie=1.025F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
 
+            }
+        });
+        podaj_zacienienie_3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_zacienienie_3){
+                    podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_3.getText());
+                    zmienna_zacienienie=1.05F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_kierunek_1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_kierunek_1){
+                    podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_1.getText());
+                    zmienna_kierunek= 1.1F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_kierunek_2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_kierunek_2){
+                    podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_2.getText());
+                    zmienna_kierunek= 1.0F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
+        podaj_kierunek_3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_kierunek_3){
+                    podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_3.getText());
+                    zmienna_kierunek= 1.075F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+
+            }
+        });
+        podaj_kierunek_4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==podaj_kierunek_4){
+                    podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_4.getText());
+                    zmienna_kierunek= 1.075F;
+                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                }
+            }
+        });
 
     }
 
@@ -149,6 +271,12 @@ public class GUI implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if(e.getSource()==zatwierdz){
+            podane_rachunki.setText("Podana wartość rachunków: "+podaj_rachunki.getText()+" zł");
+            float moc=(Float.parseFloat(podaj_rachunki.getText())*0.02f);
+            moc_instalacji.setText("Moc potrzebnej instalacji fotowoltaicznej: "+moc+" KWp"); //1zl to 0.02kW mocy fotowoltaiki
+            float powierzchnia=(Float.parseFloat(podaj_rachunki.getText())*0.13f); //1zl to 0.13m2 powierzchni paneli
+            rozmiar_instalacji.setText("Powierzchnia potrzebnych paneli fotowoltaicznych: "+powierzchnia +" m2");
+        }
     }
 }
