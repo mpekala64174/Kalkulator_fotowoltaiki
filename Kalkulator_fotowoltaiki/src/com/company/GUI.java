@@ -166,13 +166,21 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
         koszt_instalacji.setForeground(Color.GREEN);
 
         podaj_nachylenie_1.addActionListener(new ActionListener() { //obsługa zdarzeń dla każdego komponentu
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource()==podaj_nachylenie_1){
                     podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_1.getText());
                     zmienna_nachylenie= 1.2F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -182,8 +190,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_nachylenie_2){
                     podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_2.getText());
                     zmienna_nachylenie= 1.05F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -193,8 +208,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_nachylenie_3){
                     podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_3.getText());
                     zmienna_nachylenie= 1.0F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -204,8 +226,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_nachylenie_4){
                     podane_nachylenie.setText("Podane nachylenie: "+podaj_nachylenie_4.getText());
                     zmienna_nachylenie= 1.1F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -215,8 +244,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_zacienienie_1){
                     podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_1.getText());
                     zmienna_zacienienie=1.0F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -226,8 +262,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_zacienienie_2){
                     podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_2.getText());
                     zmienna_zacienienie=1.025F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
 
             }
@@ -238,8 +281,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_zacienienie_3){
                     podane_zacienienie.setText("Podane zacienienie: "+podaj_zacienienie_3.getText());
                     zmienna_zacienienie=1.05F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -249,8 +299,15 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_kierunek_1){
                     podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_1.getText());
                     zmienna_kierunek= 1.1F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -260,8 +317,16 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_kierunek_2){
                     podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_2.getText());
                     zmienna_kierunek= 1.0F;
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
                     koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    }
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -271,8 +336,16 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_kierunek_3){
                     podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_3.getText());
                     zmienna_kierunek= 1.075F;
-                    float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
+                        float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
+                        koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    }
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
 
             }
@@ -283,8 +356,17 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
                 if(e.getSource()==podaj_kierunek_4){
                     podany_kierunek.setText("Podany kierunek: "+podaj_kierunek_4.getText());
                     zmienna_kierunek= 1.075F;
+
+                    String x = podaj_rachunki.getText();
+                    Float y =Float.valueOf(x);
+                    if(y>=0){
+
                     float koszt=(Float.parseFloat(podaj_rachunki.getText())*102f*zmienna_kierunek*zmienna_nachylenie*zmienna_zacienienie);
-                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");
+                    koszt_instalacji.setText("Koszt instalacji fotowoltaicznej: "+koszt+" zł");}
+                    else{
+                        podane_rachunki.setText("Błąd danych!");
+                        koszt_instalacji.setText("Błędna wartość rachunku");
+                    }
                 }
             }
         });
@@ -304,13 +386,24 @@ public class GUI implements ActionListener{ //klasa GUI implementująca interfej
     @Override
     public void actionPerformed(ActionEvent e) { // dodatkowa obsługa zdarzeń
         if(e.getSource()==zatwierdz){
-            podane_rachunki.setText("Podana wartość rachunków: "+podaj_rachunki.getText()+" zł");
 
-            float moc=(Float.parseFloat(podaj_rachunki.getText())*0.02f);
-            moc_instalacji.setText("Moc potrzebnej instalacji fotowoltaicznej: "+moc+" KWp"); //1zl to 0.02kW mocy fotowoltaiki
+            String x = podaj_rachunki.getText();
+            Float y =Float.valueOf(x);
+            if(y>=0){
+                podane_rachunki.setText("Podana wartość rachunków: "+podaj_rachunki.getText()+" zł");
 
-            float powierzchnia=(Float.parseFloat(podaj_rachunki.getText())*0.13f); //1zl to 0.13m2 powierzchni paneli
-            rozmiar_instalacji.setText("Powierzchnia potrzebnych paneli fotowoltaicznych: "+powierzchnia +" m2");
+                float moc=(Float.parseFloat(podaj_rachunki.getText())*0.02f);
+                moc_instalacji.setText("Moc potrzebnej instalacji fotowoltaicznej: "+moc+" KWp"); //1zl to 0.02kW mocy fotowoltaiki
+
+                float powierzchnia=(Float.parseFloat(podaj_rachunki.getText())*0.13f); //1zl to 0.13m2 powierzchni paneli
+                rozmiar_instalacji.setText("Powierzchnia potrzebnych paneli fotowoltaicznych: "+powierzchnia +" m2");
+            }
+           else{
+               podane_rachunki.setText("Błąd danych!");
+               koszt_instalacji.setText("Błędna wartość rachunku");
+            }
+
+
         }
     }
 
